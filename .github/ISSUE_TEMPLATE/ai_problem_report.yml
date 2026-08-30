@@ -1,0 +1,78 @@
+name: AI / integration problem report
+description: Structured public report for AI agents, MCP clients, and integrations
+title: "[AI Report] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use only sanitized, public-safe facts. Never paste tool payloads, tokens, headers, private URLs, raw server responses, private source, customer data, payment data, or KYC/KYB/KYT information.
+  - type: dropdown
+    id: reporter
+    attributes:
+      label: Reporter
+      options:
+        - AI agent
+        - MCP client
+        - External integration
+        - Developer
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      options:
+        - Marketplace / Community app
+        - Seller / business experience
+        - MCP / AI integration
+        - Authentication
+        - Verification
+        - Payments
+        - Notifications
+        - Public API / integration
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: State only what was actually observed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or triggering action
+      description: Use safe user-facing actions and omit private payloads.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Client / app / integration version
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+  - type: input
+    id: correlation
+    attributes:
+      label: Public-safe diagnostic reference
+      description: Optional. Include only a reference explicitly designed to be safe for public disclosure; otherwise leave blank.
+  - type: checkboxes
+    id: certainty
+    attributes:
+      label: Confirmation
+      options:
+        - label: I did not invent or infer an unverified technical root cause.
+          required: true
+        - label: I removed secrets, private implementation details, personal/customer data, payment data, verification evidence, and raw payloads.
+          required: true
