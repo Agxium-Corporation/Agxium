@@ -1,0 +1,78 @@
+name: Bug report
+description: Report unexpected behavior in an Agxium product or integration
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. This repository is public. Do not include passwords, tokens, private URLs, customer/patient data, payment data, KYC/KYB/KYT evidence, raw production payloads, or other sensitive information.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Agxium product or surface
+      options:
+        - Marketplace / Community app
+        - Seller / business experience
+        - MCP / AI integration
+        - Authentication
+        - Verification
+        - Payments
+        - Notifications
+        - Public API / integration
+        - Website / documentation
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed problem in plain language.
+      placeholder: Tell us what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the shortest safe sequence that reproduces the issue. Do not paste private data.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App / integration version
+      placeholder: e.g. 2.7.193 or unknown
+  - type: input
+    id: platform
+    attributes:
+      label: Platform / device
+      placeholder: e.g. Android 16, Windows 11, ChatGPT web
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe screenshots or additional context
+      description: Optional. Remove names, IDs, private URLs, account information, and other sensitive data before attaching anything.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: I checked this report and removed secrets, credentials, private/customer data, payment data, verification evidence, and other sensitive information.
+          required: true
