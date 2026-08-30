@@ -1,0 +1,31 @@
+name: General feedback
+description: Share product, roadmap, documentation, or ecosystem feedback that is not a bug or feature request
+title: "[Feedback] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Product experience
+        - Roadmap / priorities
+        - Developer experience
+        - Documentation
+        - Integration ecosystem
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Tell us what you think or what should be considered. Do not include sensitive or private information.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: This feedback contains no secrets, private/customer data, payment data, verification evidence, or other sensitive information.
+          required: true
