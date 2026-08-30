@@ -1,0 +1,53 @@
+name: Feature request
+description: Suggest an improvement or new capability for Agxium
+title: "[Feature] "
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Agxium product or surface
+      options:
+        - Marketplace / Community app
+        - Seller / business experience
+        - MCP / AI integration
+        - Authentication
+        - Verification
+        - Payments
+        - Notifications
+        - Public API / integration
+        - Website / documentation
+        - Cross-product / ecosystem
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What workflow, limitation, or user need should Agxium address?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe what a successful solution should enable. Implementation details are optional.
+    validations:
+      required: true
+  - type: textarea
+    id: users
+    attributes:
+      label: Who benefits?
+      placeholder: Buyers, sellers, developers, integrations, administrators, etc.
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Important constraints or examples
+      description: Optional. Do not include private or sensitive information.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: This request contains no secrets, private/customer data, payment data, verification evidence, or other sensitive information.
+          required: true
