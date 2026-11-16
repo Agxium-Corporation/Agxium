@@ -1,6 +1,7 @@
 name: Feature request
 description: Suggest an improvement or new capability for Agxium
 title: "[Feature] "
+labels: [enhancement]
 body:
   - type: dropdown
     id: product

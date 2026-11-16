@@ -31,6 +31,7 @@ body:
         - Payments
         - Notifications
         - Public API / integration
+        - Website / documentation
         - Other / not sure
     validations:
       required: true

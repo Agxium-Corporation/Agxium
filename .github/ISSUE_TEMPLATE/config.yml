@@ -1,2 +1,5 @@
 blank_issues_enabled: false
-contact_links: []
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Agxium-Corporation/Agxium/security/policy
+    about: Use the private security reporting process for suspected vulnerabilities instead of opening a public issue.

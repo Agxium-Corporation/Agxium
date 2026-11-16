@@ -1,6 +1,7 @@
 name: Bug report
 description: Report unexpected behavior in an Agxium product or integration
 title: "[Bug] "
+labels: [bug]
 body:
   - type: markdown
     attributes:
