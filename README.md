@@ -22,6 +22,10 @@ Never include passwords, tokens, API keys, private URLs, customer data, payment 
 
 Use **Issues → New issue → Feature request**. Describe the problem or outcome first; implementation details are optional.
 
+## Send feedback
+
+Use **Issues → New issue → General feedback** to share product, roadmap, documentation, or ecosystem feedback. Open the [issue chooser](https://github.com/Agxium-Corporation/Agxium/issues/new/choose) to get started.
+
 ## Roadmap and backlog
 
 Public milestones represent planned delivery targets. Open issues represent the public backlog. Milestone assignment means an item is planned for that target; it is not a contractual delivery commitment.
@@ -39,7 +43,7 @@ When engineering work is required, Agxium tracks implementation in the appropria
 
 ## Security
 
-Do **not** report suspected security vulnerabilities as public issues. See [SECURITY.md](SECURITY.md).
+Do **not** report suspected security vulnerabilities as public issues. Submit them through [GitHub private vulnerability reporting](https://github.com/Agxium-Corporation/Agxium/security/advisories/new), and see [SECURITY.md](SECURITY.md) for handling guidance.
 
 ## Contributing
 

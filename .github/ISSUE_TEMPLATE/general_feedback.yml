@@ -1,6 +1,7 @@
 name: General feedback
 description: Share product, roadmap, documentation, or ecosystem feedback that is not a bug or feature request
 title: "[Feedback] "
+labels: [feedback]
 body:
   - type: dropdown
     id: area
